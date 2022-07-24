@@ -228,8 +228,10 @@ function getTail(arr, n) {
  *    +'20,21,22,23,24\n'
  *    +'30,31,32,33,34'
  */
-function toCsvText(/* arr */) {
-  throw new Error('Not implemented');
+function toCsvText(arr) {
+  // throw new Error('Not implemented');
+  const csv = arr.map((d) => d.join()).join('\n');
+  return csv;
 }
 
 /**
@@ -502,7 +504,12 @@ function sortCitiesArray(arr) {
  */
 function getIdentityMatrix(n) {
   // throw new Error('Not implemented');
-  return [...Array(n)].map((el1, x, arr) => arr.map((el2, y) => (x === y ? 1 : 0)));
+  return [...Array(n)].map(
+    (el1, x, arr) =>
+      // eslint-disable-next-line implicit-arrow-linebreak, comma-dangle
+      arr.map((el2, y) => (x === y ? 1 : 0))
+    // eslint-disable-next-line function-paren-newline
+  );
 }
 
 /**

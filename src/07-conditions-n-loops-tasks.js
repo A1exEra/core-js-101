@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-return-assign */
 /* eslint-disable array-callback-return */
@@ -474,6 +475,62 @@ function getMatrixProduct(/* m1, m2 */) {
  */
 function evaluateTicTacToePosition(/* position */) {
   throw new Error('Not implemented');
+  // if (
+  //   position[0][0] === 'X'
+  //   && position[1][1] === 'X'
+  //   && position[2][2] === 'X'
+  // ) {
+  //   return 'X';
+  // }
+  // if (
+  //   position[0][0] === '0'
+  //   && position[1][1] === '0'
+  //   && position[2][2] === '0'
+  // ) {
+  //   return '0';
+  // }
+  // if (
+  //   position[0][2] === 'X'
+  //   && position[1][1] === 'X'
+  //   && position[2][0] === 'X'
+  // ) {
+  //   return 'X';
+  // }
+  // if (
+  //   position[0][2] === '0'
+  //   && position[1][1] === '0'
+  //   && position[2][0] === '0'
+  // ) {
+  //   return '0';
+  // }
+  // // ///////////////////////////////
+  // position.forEach((pos) => {
+  //   pos.forEach((el) => {
+  //     let X = 0;
+  //     let O = 0;
+  //     if (el === 'X') {
+  //       X++;
+  //       if (X === 3) {
+  //         return 'X';
+  //       }
+  //     }
+  //     if (el === '0') {
+  //       O++;
+  //       if (O === 3) {
+  //         return '0';
+  //       }
+  //     }
+
+  //     return undefined;
+  //   });
+  // if (pos.join(' | ') === 'XXX') {
+  //   return 'X';
+  // }
+  // if (pos.join('|') === '000') {
+  //   return '0';
+  // }
+  // });
+  // else return undefined
 }
 
 module.exports = {
